@@ -1,10 +1,11 @@
+import { Route } from 'react-router-dom';
 import './App.css';
-import Homepage from './Pages/Homepage/Homepage'
+import Routes from './Pages/Homepage/ROUTE/Routes';
 
 function App() {
   return (
     <div >
-      <Homepage/>
+      <Routes/>
     </div>
   );
 }
