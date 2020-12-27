@@ -8,9 +8,10 @@ import WOMENS from '../PageComp/WOMENS/WOMENS';
 import MENS from '../PageComp/MENS/MENS';
 import ERROR from '../PageComp/ERROR/ERROR';
 import Shoppagecomp from '../../Shoppage/Shoppagecomp';
+import SigninAndSignout from '../../SigninAndSignout/SigninAndSignout';
 
-
-export default function Routes() {
+class Routes extends React.Component {
+    render(){
     return (
         <div>
             <Switch>{/*It allows only one route to be rendered*/}
@@ -21,8 +22,11 @@ export default function Routes() {
                 <Route exact path = '/womens' component = {WOMENS}/>
                 <Route exact path = '/mens' component = {MENS}/>
                 <Route path = '/shop' component = {Shoppagecomp}/>
+                <Route path = '/signin' component = {SigninAndSignout}/>
                 <Route component={ERROR} />
             </Switch>
         </div>
     )
 }
+}
+export default Routes;
